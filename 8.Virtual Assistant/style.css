@@ -1,0 +1,101 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#logo {
+    width: 30vw;
+}
+
+h1 {
+    color: aliceblue;
+    font-family: "Dancing Script", cursive;
+}
+
+#name {
+    color: rgb(226, 14, 145);
+    font-size: 40px;
+}
+
+#va {
+    color: rgb(184, 4, 175);
+    font-size: 45px;
+}
+
+#voice {
+    width: 80px;
+    display: none;
+}
+
+#btn {
+    width: 38%;
+    background: linear-gradient(to right, rgb(197, 31, 131), rgb(27, 6, 55));
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+#btn img {
+    width: 20px;
+}
+
+/* New styles for input and submit button */
+#input-text {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(197, 31, 131);
+    outline: none;
+    font-size: 16px;
+    color: rgb(226, 14, 145);
+    background-color: aliceblue;
+}
+
+#submit-btn {
+    width: 150px;
+    padding: 10px;
+    border-radius: 25px;
+    background: linear-gradient(to right, rgb(197, 31, 131), rgb(27, 6, 55));
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+#submit-btn:hover {
+    background: linear-gradient(to right, rgb(227, 50, 160), rgb(55, 10, 75));
+}
+
+#submit-btn:active {
+    transform: scale(0.95);
+}
+#btn img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    background-color: #fff; /* fallback in case the image doesn't load */
+    display: inline-block;
+    border-radius: 50%;
+}
